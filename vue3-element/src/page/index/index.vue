@@ -27,6 +27,7 @@
         </div>
       </el-menu>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -49,16 +50,37 @@ export default {
         icon: UserFilled,
         title: '用户列表',
         router: '',
+        Subclass: []
+      },
+      {
+        id: '3',
+        icon: UserFilled,
+        title: '订单管理',
+        router: '',
+        Subclass: []
+      },
+      {
+        id: '4',
+        icon: UserFilled,
+        title: '菜品管理',
+        router: '',
+        Subclass: []
+      },
+      {
+        id: '5',
+        icon: UserFilled,
+        title: '员工管理',
+        router: '',
         Subclass: [
           {
-            id: '2-1',
-            title: '用户详情',
-            router: '',
+            id:'5-1',
+            title: '员工详情',
+            router: ''
           },
           {
-            id: "2-2",
-            title: '用户权限',
-            router: '',
+            id:'5-2',
+            title: '其他页面',
+            router: ''
           }
         ]
       }

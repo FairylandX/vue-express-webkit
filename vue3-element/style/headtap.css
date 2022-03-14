@@ -73,7 +73,7 @@
 
 .sidebar-top {
     width: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     height: 50px;
     color: #333333;
     display: flex;
@@ -107,4 +107,67 @@
     color: #000000 !important;
     font-size: 16px;
     overflow-y: auto;
+}
+
+/*--主页位置--*/
+.ordering {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    right: 0;
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/*--标题--*/
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*--全局相应式--*/
+/* 大于1700 */
+@media screen and (min-width: 1700px) {
+    .ordering {
+        max-width: 1400px;
+    }
+}
+
+/* 小于1700 */
+@media screen and (max-width: 1700px) {
+    .ordering {
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width: 1650px){
+    .ordering {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .ordering {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .ordering {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .ordering {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ordering {
+        max-width: 850px;
+    }
 }
